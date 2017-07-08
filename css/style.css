@@ -1,0 +1,36 @@
+#photoList {
+  list-style: none;
+  padding: 0;
+}
+
+#photoList li {
+  float: left;
+  padding: 5px;
+  max-width: 300px;
+
+}
+#photoList li figure {
+  background-color: #000;
+  position: relative;
+}
+#photoList li figure span {
+  bottom: 10px;
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: bold;
+  left: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: .5s;
+}
+#photoList li figure img {
+  width: 100%;
+  height: auto;
+  transition: .5s;
+}
+#photoList li:hover img{
+  opacity: .5
+}
+#photoList li:hover span{
+  opacity: 1
+}
